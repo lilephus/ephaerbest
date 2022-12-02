@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webutvikling">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ephantus Hansen">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://github.com/lilephus/epha.github.no.git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="https://github.com/lilephus/epha.github.no.git">
+<meta property="og:description" content="Webutvikling Forklart ved bruk av UU, SEO, CMS og Analyse.">
+<meta property="og:image" content="https://github.com/lilephus/epha.github.no.git/bilder/Main-logo.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="epha.github.no.git">
+<meta property="twitter:url" content="https://github.com/lilephus/epha.github.no.git">
+<meta name="twitter:title" content="Kontaktoss">
+<meta name="twitter:description" content="Webutvikling Forklart ">
+<meta name="twitter:image" content="https://github.com/lilephus/epha.github.no.git/bilder/Main-logo.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <script src="https://kit.fontawesome.com/a5d8157418.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="bilder/Main-logo.png">
+    <title>Del eksamen 4 webutvikling</title>
+</head>
+<body> 
+    <div class="grid-container">
+        <header class="top-header">
+            <a href="Innholdsside.html"><img class="logo" src="bilder/Main-logo.png" alt="logo"></a>                 <!-- Logo hentet fra https://www.freepik.com/ Free to use for commercial use-->
+            <nav class="topnav">
+                <ul>
+                    <li><a href="Innholdsside.html">Hjem</a></li>
+                    <li><a href="UUvsSEO.html">UU vs SEO</a></li>
+                    <li><a href="CMS.html">CMS</a></li>
+                    <li><a href="Analyse.html">Analyse</a></li>
+                    <li><a href="Kontaktoss.html">kontakt oss</a></li>
+                </ul>
+            </nav>
+    </header>         
+    <main> 
+                                                                                                                                 <!--For å få det til å bruke grid har jeg brukt det jeg lærte fra forlsening, https://www.w3schools.com/css/css_grid_container.asp, og https://codepen.io/bradtraversy/ -->                                                                                                                            
+    <section class="section-grid-container">
+                <article class="Main-article">
+                  <h2>Velkommen!</h2>
+                  <p>Under kan du ta kontakt med oss via mail eller finne ut hvor vi er på kartet!</p>
+                  <img src="bilder/kontakt-oss.jpg" alt="bilde kontakt oss" width="500" height="600">
+                  <h3>Du finner oss her!</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1884406378012!2d11.35061461606424!3d59.12924748158928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1664494839271!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <!-- For å få kartet i orden så jeg på denne video https://www.youtube.com/watch?v=4U_AAGHzTok  -->
+                  <!-- form container  kilde hentet fra https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+                  <div class="form-container">     
+                    <form action="/action_page.php">
+                      <label for="fname">Fornavn</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Navnet ditt..">
+                  
+                      <label for="lname">Etternavn</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Etter navnet ditt..">
+                  
+                      <label for="country">Land</label>
+                      <select id="country" name="country">
+                        <option value="australia">Norge</option>
+                      </select>
+                  
+                      <label for="subject">Tema</label>
+                      <textarea id="subject" name="subject" placeholder="Skrive noe her.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Send">
+                    </form>   
+                    </div> 
+                </article>
+    </section>
+                                                                                                                         <!--For å få det til å bruke grid har jeg brukt det jeg lærte fra forlsening, https://www.w3schools.com/css/css_grid_container.asp, og https://codepen.io/bradtraversy/ -->
+
+            <section class="section2-article-boxes">
+                <article class="article-box">
+                  <i class="fas fa-chart-pie fa-4x"></i>
+                  <h3>Kontaktinformasjon</h3>
+                  <p>Tlf: 69 60 80 00</p>
+                  <p>Faks: 69 60 80 01</p>
+                  <a href="https://www.hiof.no/om/kontaktinformasjon/" class="button">Les mer</a>
+                </article>
+
+                <article class="article-box">
+                  <i class="fas fa-globe fa-4x"></i>
+                  <h3>Postadresse</h3>
+                  <p>Høgskolen i Østfold</p>
+                  <p>Postboks 700 1757 Halden</p>
+                  <a href="https://www.google.no/maps/place/H%C3%B8gskolen+i+%C3%98stfold/@59.1292475,11.3528033,17z/data=!3m1!4b1!4m5!3m4!1s0x464412f0d344246f:0x4e47f19c99b253b1!8m2!3d59.1292475!4d11.3528033?hl=no&authuser=0" class="button">Les mer</a>
+                </article>
+
+                <article class="article-box">
+                  <i class="fas fa-cog fa-4x"></i>
+                  <h3>Organisasjonsnummer</h3>
+                  <p>971 567 376</p>
+                  <p>E-post: postmottak@hiof.no</p>
+                  <a href="https://mail.google.com/mail/u/0/?tab=rm&amp;ogbl#inbox?compose=VpCqJbQNDxKRtmJhjkTbBQhfrPlgMVNSpXpjtBPgxrLQfjsfGvBlbXHGWqttkQfKSfjvctv" class="button">Les mer</a>
+                </article>
+            </section> 
+            <div class="sharebutton-container">
+                <a href="https://www.facebook.com/sharer.php?u=http://127.0.0.1:5500/Del-2-eksamen-webutvikling/Innholdsside.html"><i class="fa-brands fa-square-facebook fa-2x"></i></a>   
+                <a href="https://www.twitter.com/share?text=Se-på-denne-nettside=http://127.0.0.1:5500/Del-2-eksamen-webutvikling/Innholdsside.html"><i class="fa-brands fa-square-twitter fa-2x"></i></a>
+                <a href="http://pinterest.com/pin/create/button/?url=http://127.0.0.1:5500/Del-2-eksamen-webutvikling/Innholdsside.html"><i class="fa-brands fa-square-pinterest fa-2x"></i></a>
+             </div>
+        </main>    
+
+        <div class="ins">
+          <i  id="myBtn" class="fas fa-cog instilinger"></i>
+
+          <a href="#grid_container" aria-label="gå fort opp til start siden">
+          <i style="font-size: 14px;" class="fas fa-arrow-circle-up instilinger"></i>
+          </a>
+      </div>
+
+        <footer class="footer">
+            <i class="social">
+                <a href="https://www.instagram.com/officialepha/?hl=en"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-square-twitter fa-2x"></i></a>
+            </i>
+            <p class="copyright">Ephantus Hansen @ 2022</p>
+    </footer>
+    </div>
+    </body>
+</html>
+

@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+  body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    background: url(bilder/Main-bg-img.jpg) no-repeat;   /*Bilde hentet fra https://www.freepik.com/search?format=search&query=white%20background*/
+    background-size: stretch;
+    background-position:  center;
+    position: relative;
+    flex-wrap: wrap;
+    padding-bottom:60px;
+}
+ .grid-container{
+    display: grid;
+    grid-gap: 1em;
+    min-width: 600px;  
+    margin:0 auto;
+    gap:10px;
+    grid-auto-rows: minmax(100px,auto);                           
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header" 
+                          "nav nav nav" 
+                          "main main main" 
+                          "footer footer footer"
+ }
+ 
+ /* header */
+ header{      
+  display: grid;   
+  grid-area: header;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+
+}
+.myBtn{
+   padding: 25px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 5px;
+
+}
+
+.logo{
+  position: relative;
+  justify-content: center;
+}
+  @media (min-width: 320px) {
+    .logo{
+      position:relative; right:60px; top:20px;
+    }
+    }
+      @media (min-width: 899px) {
+        .logo{
+          position:relative; left:10px; top:20px;
+        }
+        }
+
+/* nav */
+ .topnav{
+  position: relative;
+  top:130px;
+}
+  nav ul{
+  grid-area: nav;
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+  nav ul li a{
+  display:block;
+  background: #ddd;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 1px 5px #333;
+}
+  nav ul li a:hover{
+  text-decoration:underline;
+  background-color: #444;
+  box-shadow: 10px 10px 50px #0E1116;
+  border-radius: 10px;
+  scale: 105%; 
+  letter-spacing: 0.25rem;
+  transition: 0.5s;
+  color: yellow;
+  font-weight: bolder;
+  justify-content: space-between;
+}
+.section-grid-container {                            
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'article-a article-a article-box-a'
+    'article-a article-a article-box-b';
+}
+.Main-article {
+  display: flex;  
+  grid-area: article-a;
+  min-height: 400px;
+  background-color: #fff;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: #333;
+}
+
+main h1{
+  color:#333;
+}
+
+.section-grid-container .Main-article h1 {
+  font-size: xx-large;
+  color: BLACK;
+ 
+}
+.section-grid-container .Main-article h2 {
+  font-size: large;
+  color: #333;
+ 
+}
+.section-grid-container .Main-article p {
+  font-size: large;
+  color: #000000;
+  display: ruby-text-container;
+}
+.section-grid-container .Main-article h6 {
+  font-size: medium;
+  color: #000000;
+  display: ruby-text-container;
+}
+.Main-article p {
+  font-size: smaller;
+  color: #333;
+}
+/* Tabell farger */
+.grid-tabell2 div h3{
+  color: #333;
+}
+/* Størreslse i section2 */
+.section2-article-boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+/* artikkelen */
+.article-box {
+  flex: content;
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: #333;
+  scale: 95%;
+  border: 50;
+}
+.article-box:hover { 
+  box-shadow: 10px 10px 50px yellow;   /*For å få CSS box-shadow til å fungere fikk jeg info fra denne video https://www.youtube.com/watch?v=xaJ-3zYlgO8  */
+  overflow: center;
+  cursor: pointer;
+  scale: 100%;
+  color:#fff;
+  transition: 0.5s;
+}
+/* alle buttons */
+.button {
+  background: #333;
+  color: yellow;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+.button {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.button.article{
+  background: #333;
+  color: #ddd;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+.button.article {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.button-article{
+  background: #333;
+  color: yellow;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+.logo{
+  width: 150px;
+  height: 150px;
+  margin-left: 40%;
+  margin-right: auto;
+    
+}    
+/* Innhold i main */
+main{
+  grid-area: main;
+  display: grid;
+  background-color: #ddd;
+  align-self: center;
+  padding: 12rem;
+  justify-content: center;
+}
+main a{
+  color: black;
+  }
+  /* tabell */
+  .tabell-1{                    /* For å få tabellen til være rensposiv og for å finne ut hvordan media queries virker på colums,brukte jeg en youtube video som en kilde. https://www.youtube.com/watch?v=8p0OblRuhd0&t=591s */
+    border: 3px solid #0E1116;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-size: medium;
+    display: grid;
+    grid-gap: 16px;
+    }
+    /* media queries tabell */
+    .kol{
+      border: 2px solid #0E1116;
+      background-color: #fff;
+      padding: 16px; 
+    }
+      @media (min-width: 1024px) {
+        .tabell-1{
+          grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    @media (min-width: 768px) {
+      .tabell-1{
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media (min-width: 480px) {
+      .tabell-1{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    @media (min-width: 1200px) {
+      .tabell-1{
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .tabell-1 .kol h1{
+      font-size: large;
+    }
+    .tabell-1 .kol h2{
+      font-size: medium;
+      text-align: left;
+    }
+    /* For at noen av colums skal ikke vises */
+    .kol-tittle-1{
+      border: 2px solid #0E1116;
+      background-color: #fff;
+      padding: 16px; 
+    }
+    .kol-tittle-2{
+      border: 2px solid #0E1116;
+      background-color: #fff;
+      padding: 16px; 
+    }
+    @media (min-width: 375px) {
+      .kol-tittle-2{
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (min-width: 390px) {
+      .kol-tittle-2{
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (min-width: 480px) {
+      .kol-tittle-2{
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (min-width: 768px) {
+      .kol-tittle-2{
+        display: block;
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (min-width: 1024px) {
+      .kol-tittle-2{
+        display: none;
+        grid-template-columns: 1fr;
+      }
+  }
+  @media (min-width: 899px) {
+    .kol-tittle-2{
+      display: none;
+      grid-template-columns: 1fr;
+    }
+}
+  @media (min-width: 1200px) {
+    .kol-tittle-2{
+      display: block;
+      grid-template-columns: 1fr;
+    }
+
+
+  }
+  .kol-tittle-3{
+    border: 2px solid #0E1116;
+    background-color: #fff;
+    padding: 16px; 
+  }
+  @media (min-width: 375px) {
+    .kol-tittle-3{
+      display: none;
+      grid-template-columns: 1fr;
+    }
+  }
+@media (min-width: 1200px) {
+  .kol-tittle-3{
+    display: block;
+    grid-template-columns: 1fr;
+  }
+}
+.kol-info-1{
+  border: 2px solid #0E1116;
+  background-color: #fff;
+  padding: 16px; 
+}
+@media (min-width: 1200px) {
+  .kol-info-1{
+  display: block;
+  grid-template-columns: 3fr;
+}
+}
+
+  /* tabell  */
+.tabell-2{                    /* For å få tabellen til være rensposiv og for å finne ut hvordan media queries virker på colums,brukte jeg en youtube video som en kilde. https://www.youtube.com/watch?v=8p0OblRuhd0&t=591s */
+  border: 3px solid #0E1116;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-size: medium;
+  display: grid;
+  grid-gap: 16px;
+  }
+  .kol{
+    border: 2px solid #0E1116;
+    background-color: #fff;
+    padding: 16px; 
+  }
+  @media (min-width: 1024px) {
+    .tabell-2{
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 768px) {
+  .tabell-2{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 453px) {
+  .tabell-2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .tabell-2{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tabell-2 .kol h1{
+  font-size: large;
+}
+.tabell-2 .kol h2{
+  font-size: medium;
+  text-align: left;
+}
+/* button   https://www.youtube.com/watch?v=IKLn4MlzpBg*/         
+
+.sharebutton-container{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-shadow: #444;
+  position: fixed;
+  top: 50%px;
+  transform: translateY(-50%);
+  left: 7%;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+@media (max-width:550px){
+  .sharebutton-container{
+    transform: unset;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+}
+}
+.fa-square-facebook{
+  color: #1877f2;
+}
+.fa-square-twitter{
+  color: #1da1f2;
+}
+.fa-square-pinterest{
+  color: #bd081c;
+}
+.fa-square-instagram{
+  color: #c32aa3;
+}
+
+.fab-container{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 9;
+	cursor: pointer;
+}
+iframe{
+  max-width: 99%;
+}
+.tabell-1 img{
+  max-width: 800px;
+}
+/* form container  kilde hentet fra https://www.w3schools.com/howto/howto_css_contact_form.asp*/ 
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+/* footer innhold */
+.footer{                                                               
+  grid-area: footer;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #0E1116;
+  color: #fff;
+  position:absolute;
+  bottom:0;
+  width:100%
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color:#78c41c;
+}
+.footer .social a{
+  font-size: 24px;
+  color: inherit;
+  width: 0px;
+  height: 0px;
+  line-height: 38px;
+  display: inline-block;
+  margin: 3% 14%;
+  transition: 1s;
+}
+.footer .social a:hover{
+  box-shadow: 10px 10px 50px #131313;
+  scale: 110%; 
+  color: orange;
+  font-weight: bolder;
+}
+.footer p{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: medium;
+  margin-top: 15px;
+  color: #fff;
+}
+.footer i a i{
+  color:yellow;
+}
+/* Media Queries */
+@media (max-width: 480px) {
+  .topnav ul {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 858px) {
+  .topnav ul {
+    grid-template-columns: 1fr;
+  }
+}
+.article-box {
+    grid-template-columns: 1fr;
+  }
